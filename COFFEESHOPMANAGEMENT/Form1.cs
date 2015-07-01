@@ -20,5 +20,20 @@ namespace COFFEESHOPMANAGEMENT
         {
 
         }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void configToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
