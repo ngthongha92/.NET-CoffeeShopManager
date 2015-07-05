@@ -21,19 +21,12 @@ namespace COFFEESHOPMANAGEMENT
 
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+        private void manualUpdateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void configToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            banDAO banDAO = new banDAO();
+            DataTable a= banDAO.getallban();
+            DataRow r = a.Rows[0];
+            MessageBox.Show(r["maban"].ToString() + "-" + r["tenban"].ToString() + "-" + r["khuvuc"].ToString());
         }
     }
 }
